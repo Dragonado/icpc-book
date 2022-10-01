@@ -1,3 +1,8 @@
+/**
+ * Author: CF & Andrew He
+ * License: not sure
+ * Description: ordered set and fast hashmap
+ */
 #pragma once
 
 #include <ext/pb_ds/assoc_container.hpp> //required

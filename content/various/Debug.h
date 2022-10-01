@@ -1,19 +1,14 @@
+/**
+ * Author: Tourist
+ * License: not sure
+ * Description: Making data types printable for standard error
+ */
 #pragma once
 
-clock_t startTime;
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-double getCurrentTime() {
-  return (double)(clock() - startTime) / CLOCKS_PER_SEC;
-}
 string to_string(string s) { return '"' + s + '"'; }
 string to_string(const char *s) { return to_string((string)s); }
 string to_string(bool b) { return (b ? "true" : "false"); }
-int getRandomNumber(int l, int r) {
-  uniform_int_distribution<int> dist(l, r);
-  return dist(rng);
-}
 
-// https://github.com/the-tourist/algo/blob/master/misc/debug.cpp
 template <typename A, typename B> string to_string(pair<A, B> p) {
   return "(" + to_string(p.first) + ", " + to_string(p.second) + ")";
 }
