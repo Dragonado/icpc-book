@@ -3,8 +3,9 @@
  * Description: We can use re-rooting technique when the dp value of a node only
  * depends on the dp value of its children and it can be calculated in
  * $O(\text{adj[node].size()})$ time per node
- * Usage: The below code solve the problem: For every node, find the sum of
- * distances to every other node. Dont change dfs2() function.
+ *
+ * The below code solve the problem: For every node, find the sum of distances
+ * to every other node. Dont change dfs2() function.
  * Time: $O(N)$
  */
 #pragma once

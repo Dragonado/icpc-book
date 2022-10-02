@@ -1,7 +1,7 @@
 /**
  * Author: CF & Andrew He
  * License: not sure
- * Description: ordered set and fast hashmap
+ * Description: ordered set (not multiset!) and fast hashmap
  */
 #pragma once
 

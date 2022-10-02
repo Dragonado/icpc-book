@@ -3,16 +3,16 @@
  * Description: Given N updates and Q queries. You know that for a particular
  * query: f(query, i) becomes true (and remains true) after the ith update.
  * You want to find the first i such that f(query, i) is true.
-
+ *
  * So for a single query we can binary search on i on the answer and perform
  * updates from 1 to i. The time for this per query is O(logN * cost of N
- updates). This will TLE since we need to do it for Q queries.
+ * updates). This will TLE since we need to do it for Q queries.
  * In parallel binary search can perform binary search for all queries
- parellely.
-
- * Time: $O(\log N * [T(clear) + Q * T(check) + N *(T(check) + T(apply))]$
- * Usage: Only change the solve(), clear(), apply() and check() functions.
- * Dont change work() or parallel_binary()
+ * parellely.
+ *
+ * Only change the solve(), clear(), apply() and check() functions. Dont
+ * change work() or parallel-binary() functions.
+ * Time: $O(\log N * [T(clear) + Q * T(check) + N *(T(check) + T(apply))])$
  */
 
 #pragma once
