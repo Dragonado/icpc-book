@@ -7,12 +7,18 @@ using namespace std;
 #define sz(x) (int)(x).size()
 #define pb push_back
 #define all(x) x.begin(), x.end()
+#define endl '\n'
 
 typedef long long ll;
+
+#define int ll
+
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-int main() {
-  cin.tie(0)->sync_with_stdio(0);
-  cin.exceptions(cin.failbit);
+signed main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  return 0;
 }
